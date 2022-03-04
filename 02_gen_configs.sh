@@ -23,8 +23,8 @@ fi
 NET="10.161.0"
 PORT=5353
 
-SRV_PUB_KEY=`wg genkey`
-SRV_PRIV_KEY=`echo "$SRV_PUB_KEY"|wg pubkey`
+SRV_PRIV_KEY=`wg genkey`
+SRV_PUB_KEY=`echo "$SRV_PRIV_KEY"|wg pubkey`
 
 # write initial config
 echo "[Interface]
@@ -36,8 +36,8 @@ PostUp = sysctl net.ipv4.ip_forward=1
 " > bay_srv.conf
 
 for i in {2..255}; do
-  CLT_PUB_KEY=`wg genkey`
-  CLT_PRIV_KEY=`echo "$CLT_PUB_KEY"|wg pubkey`
+  CLT_PRIV_KEY=`wg genkey`
+  CLT_PUB_KEY=`echo "$CLT_PRIV_KEY"|wg pubkey`
 
   echo "[Peer]
 PublicKey = $CLT_PUB_KEY
