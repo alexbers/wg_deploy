@@ -12,3 +12,7 @@ Tested on Ubuntu 18.04, 20.04 and 21.10.
 2. `./wg_deploy.sh`
 
 If all ok, the client configs will be ./client dir
+
+![Demo](https://alexbers.com/wg.png)
+
+
