@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# installs wireguard
-apt -qq update && apt -qqq install -y wireguard-tools
+# installs wireguard and iptables
+apt -qq update && apt -qqq install -y wireguard-tools iptables
