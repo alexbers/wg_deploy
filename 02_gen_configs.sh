@@ -28,6 +28,7 @@ SRV_PUB_KEY=`echo "$SRV_PRIV_KEY"|wg pubkey`
 
 # write initial config
 echo "[Interface]
+Address = ${NET}.1/24
 PrivateKey = $SRV_PRIV_KEY
 ListenPort = $PORT
 PostUp = iptables -t nat -A POSTROUTING -s ${NET}.0/24 -j MASQUERADE

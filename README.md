@@ -4,7 +4,7 @@ A script to quickly set up WireGuard VPN on Ubuntu.
 
 It generates VPN configs, starts the VPN and adds it to autorun
 
-Tested on Ubuntu 18.04, 20.04, 21.10 and 22.04.
+Tested on Ubuntu 18.04, 20.04, 21.10, 22.04 and 24.04.
 
 ## Usage ##
     
