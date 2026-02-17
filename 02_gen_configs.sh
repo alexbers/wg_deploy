@@ -6,6 +6,7 @@ if [ -d configs ]; then
     exit 1
 fi
 
+umask 077
 mkdir -p configs
 
 if ! cd configs; then
@@ -14,7 +15,7 @@ if ! cd configs; then
 fi
 
 # detect external ip
-IP=`curl -s https://ipinfo.io/ip`
+IP=$(curl -s https://ipinfo.io/ip)
 if [[ ! $IP =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   echo "No external IP detected, exiting"
   exit 1

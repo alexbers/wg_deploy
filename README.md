@@ -11,7 +11,7 @@ Tested on Ubuntu 18.04, 20.04, 21.10, 22.04 and 24.04.
 1. `git clone https://github.com/alexbers/wg_deploy.git; cd wg_deploy`
 2. `./wg_deploy.sh`
 
-If all ok, the client configs will be ./client dir
+If all ok, the client configs will be ./configs dir
 
 To fix problems with MTU on some providers add this rule to iptables:
 
